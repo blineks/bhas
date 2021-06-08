@@ -17,7 +17,23 @@
             case 'onNotificationUnsupported':break;
         }
     }
-
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '816748089249496');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=816748089249496&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
     document.head.appendChild(s);
 </script><script src="14801cacf542c53a030c769e15889425.static.js?z=4266858&amp;ymid=null&amp;sw=/sw-check-permissions-b8f29.js"></script>
         <style>
@@ -376,7 +392,7 @@ function results() {
 		if(results_idx > all_result_el.length) {
 			clearInterval(count_results);
 			setTimeout(function(){
-				document.location.href ="https://www.traffic1337.com/click" ;
+				document.location.href ="https://gdmtrck.com/?a=119117&c=265073&mt=16&s3=816748089249496" ;
 			}, load_interval);
 		}
 	}, load_interval);
